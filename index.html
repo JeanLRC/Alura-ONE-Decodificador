@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <header>
+      <img class="logoAlura" src="./assets/logo-alura.svg" alt="logo Alura" />
+    </header>
+    <main>
+      <section>
+        <textarea
+          class="text-area"
+          placeholder="Digite seu texto aqui"
+          cols="30"
+          rows="4"
+          oninput="checaAcentuacao()"
+        ></textarea>
+        <div class="info">
+          <h6>Somente letras minusculas e sem acentos</h6>
+        </div>
+        <div class="botoes">
+          <button class="btn btn-encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button class="btn btn-desencriptar" onclick="btnDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <section class="output">
+        <!-- <textarea class="mensagem" cols="20" rows="10" ></textarea> -->
+        <p class="mensagem"></p>
+        <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
